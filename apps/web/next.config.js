@@ -185,6 +185,7 @@ const nextConfig = {
   experimental: {
     // externalize server-side node_modules with size > 1mb, to improve dev mode performance/RAM usage
     optimizePackageImports: ["@calcom/ui"],
+    turbopackPersistentCaching: true,
   },
   productionBrowserSourceMaps: true,
   /* We already do type check on GH actions */
